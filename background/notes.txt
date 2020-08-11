@@ -1,0 +1,11 @@
+background-color: color-code/name;
+background-image: url('');
+background-repeat: no-repeat/repeat-x/repeat-y;
+background-position: right top/bottom, etc;
+background: {
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+}

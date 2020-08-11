@@ -1,0 +1,101 @@
+https://www.w3schools.com/css/css_padding.asp
+
+The CSS padding properties are used to generate space around an elements content, inside of any defined border.
+
+With CSS, you've full control over the padding. There are properties for setting the padding for each side of an element(top, right, bottom, and left)
+
+
+Padding - Individual Side
+-------------------------
+CSS has properties for specifying the padding for each side of an element.
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+All the padding properties can have the following values:
+length - specifies a padding px, pt, cm, etc
+%      - specifies padding in % of the width of the containing element.
+inherit - 
+
+
+
+Padding - Short hand property
+-----------------------------
+The padding - property is a short hand property for the following individual padding properties:
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+Padding shorthand property with 4 values:
+-----------------------------------------
+div{
+    padding: 25px 50px 75px 100px;  //top:25px, right:50px, bottom:75px, and left:100px
+}
+
+
+Padding shorthand property with 3 values:
+-----------------------------------------
+div{
+    padding: 25px 50px 75px;    //top: 25px, right&left: 50px, bottom, 75px
+}
+
+
+
+Padding shorthand property with 2 values:
+-----------------------------------------
+div{
+    padding: 25px 50px; //top&bottom: 25px, right&left:50px
+}
+
+
+
+Padding shorthand property with 1 value:
+----------------------------------------
+div{
+    padding: 25px;  //all four paddings are 25px;
+}
+
+
+
+Padding and Element Width
+-------------------------
+The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element.
+
+So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often undesirable result.
+
+
+Example:
+--------
+Here, the <div> element is given a width of 300px. However, the actual width of the <div> element will be 350px (300px + 25px of left padding + 25px of right padding)
+
+div{
+    width: 300px;
+    padding: 25px;
+}
+
+
+To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content-space will decrease.
+
+
+Example:
+Use the box-sizing property to keep the width at 300px, no matter the amount of padding:
+
+div{
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+

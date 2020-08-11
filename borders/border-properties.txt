@@ -1,0 +1,30 @@
+border: //sets all the border properties in one declaration
+border-bottom:  //sets all the border bottom properties in one declaration
+border-bottom-style:
+border-bottom-width:
+border-bottom-color:
+
+border-color:   //sets the color of all four borders.
+
+border-left:    //sets all the left border properties in one declaration
+border-left-color:
+border-left-width:
+border-left-style:
+
+border-radius:  //sets all the four border *radius properties for rounded corners
+
+border-right:   //sets all the right border properties in one declaration
+border-right-color:
+border-right-width:
+border-right-style:
+
+border-style:   //sets all the four borders styles one declaration
+
+border-top: //sets all the top border's properties in one declaration.
+border-top-color:
+border-top-width:
+border-top-style:
+
+border-width:   //sets all the four borders width in one declaration.
+
+

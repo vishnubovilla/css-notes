@@ -1,0 +1,159 @@
+The CSS font properties define the font-family, boldness, size and the style of a text.
+
+CSS Font Families
+-----------------
+In CSS, there are 2 type of font family names.
+generic family: a group font families with a similar look (like, 'Serif' or 'Monospace')
+font family: a specific font family (like, 'Times New Roman' or 'Arial')
+
+Generic Family
+--------------------
+Serif   -   (Times New Roman, Georgia)  -   Serif fonts have small lines at the ends on some characters.
+Sans-serif  -   (Arial, Verdana)    -   Sans means without. These fonts do not have the lines at the ends of character.
+Monospace   -   (Courier New, Lucida Console)   -   All monospace characters have the same width.
+
+
+NOTE: On computer screens, sans-serif fonts are considered easier to read than serif fonts.
+
+
+Font Family
+----------------
+The font family of a text is set with the font-family property.
+The font-family property should hold several font names as a "fall back" system. If the browser does not support the first font, it tries the next font, and so on.
+
+NOTE: If the name of a font family is more than one word, it must be enclosed in quotation marks, like "Times New Roman".
+
+More than one font family is specified in a comma-separated list.
+
+Example,
+.serif{
+    font-family: "Times New Roman", Times, Serif;
+}
+
+.sansserif{
+    font-family: Arial, sans-serif;
+}
+
+.monospace{
+    font-family: "Lucida Console", courier, monospace;
+}
+
+
+
+
+Font Style
+-------------
+The font-style property is mostly used to specify italic text.
+This property has 3 values:
+    normal
+    italic
+    oblique -   the text is leaning. (oblique is very similar to italic, but less supported)
+
+
+Font Weight
+----------------
+The font-weight property specifies the weight of a font.
+For example,
+p.normal{
+    font-weight: normal;
+}
+
+p.thick{
+    font-weight: thick;
+}
+
+
+Font Variant
+-----------------
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+In a small caps-font, all lower-case letters are converted to upper case letters. However, the converted upper case letters, appear in a smaller font size than the original upper case letters in the text.
+
+For example,
+p.normal{
+    font-variant: normal;
+}
+
+p.small-caps{
+    font-variant: small-caps;
+}
+
+
+
+
+Font Size
+------------
+The font-size property sets the size of the text.
+The font-size value can be an absolute, or relative size.
+
+Absolute size:
+    -   Sets the text to a specified size.
+    -   Does not allow the user to change the text size in all browsers (bad for accessibility reasons)
+    -   Absolute size is useful when the physical size of the output is known.
+
+Relative Size:
+    -   Sets the size relative to surrounding elements.
+    -   Allows a user to change the text size in browsers.
+
+NOTE: If you do not specify the font size, the default size for normal text, like paragraphs, is 16px (1px = 1em)
+
+
+Set Font Size with Pixels
+--------------------------------
+Setting the text size with pixels gives you full control over the text size.
+For example,
+p{
+    font-size: 40px;
+}
+
+Set Font Size with em
+----------------------------
+To allow users to resize the text, many developers use em instead of pixels.
+The em size unit is recommended by the W3C.
+1em is equal to current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+The size can be calculated from pixles to em using the following formula.
+
+    pixels/16 = em
+
+
+For example,
+h1{
+    font-size: 2.5em;
+}
+
+
+Responsive Font Size
+----------------------------
+The text size can be set with a 'vw' unit, which means, the 'viewport width'
+The way the text size will follow the size of the browser window
+
+
+Font Shorthand
+---------------------
+To shorten the code, it also possible to specify all the individual font properties in one property.
+The font property is a short hand property for:
+font-style
+font-variant
+font-weight
+font-size/line-weight
+font-family
+
+For example,
+p.a{
+    font: 20px Arial, sans-serif;
+}
+
+p.b{
+    font: italic small-caps bold 12px/13px Georgia, serif;
+}
+
+NOTE: The font-size and font-family values are required. If one of the other values is missing, their defualt values are used.
+
+font    -   sets all the font properties in one declaration
+font-family -   specifies the family of the text
+font-size   -    specifies the font size of the text
+font-style  -   specifies the font style for the text.
+font-variant    -   specifies whether or not a text should be displayed in a small-caps font.
+font-weight -   specifies the weight of a font.
+
+

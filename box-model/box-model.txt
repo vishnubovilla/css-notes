@@ -1,0 +1,42 @@
+https://www.w3schools.com/css/css_boxmodel.asp
+
+Example - 
+div{
+    width: 300px;
+    border: solid 3px black;
+    padding: 10px;
+    margin: 20px;
+}
+
+Width and Height of an element
+------------------------------------------
+In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
+
+NOTE: If you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders, and margins.
+
+
+Example
+------------
+The following <div> element will have a total width of 350px;
+
+div{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid green;
+    margin: 0;
+}
+
+
+Here is the calculation:
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0 (left + right margin)
+= 350px;
+
+Total width of an element should be calculated like - 
+total width of an element = width + left padding + right padding + left border + right border + left margin + right margin
+
+Similarly, total height of an element should be calculated like - 
+total height of an element = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+

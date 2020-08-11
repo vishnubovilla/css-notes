@@ -1,0 +1,123 @@
+CSS Outline
+----------------
+An outline is a line that is drawn around elements, outside the borders, to make the element standout.
+
+CSS has the following outline properties
+-----------------------------------------------------
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+NOTE: outline differs from borders. Unlike border, the outline is drawn outside the elements border, and may overlap other content. Also, the outline is not a part of the elements dimensions, the elements total width and height is not affected by the width of the outline.
+
+CSS Outline Style
+-----------------------
+The outline-style property specifies the style of the outline, and can have one of the following values.
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden
+
+
+NOTE: None of the other outline properties will have any effect unless the outline-style property is set.
+
+
+
+CSS Outline Width
+-----------------------
+The outline-width property specifies the width of the outline, and can have one of the following values:
+thin (typically 1px)
+medium (typicall 3px)
+think (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+
+
+The following examples shows some outlines with different widths.
+
+p.ext1{
+    border: 3px solid black;
+    
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+}
+
+p.ext2{
+    border: 1px solid red;
+    
+    outline-style: dotted;
+    outline-color: black;
+    outline-width: thick;
+}
+
+
+
+CSS Outline Color
+------------------------
+The outline-color property is used to set the color of the outline.
+
+
+
+CSS Outline - Shorthand property
+--------------------------------------------
+The outline property is a short hand property for setting the following individual outline properties:
+outline-width
+outline-style   (required)
+outline-color
+
+
+The outline property is specified as one, two, or three values from the list above. The border of the values does not matter.
+
+For example:
+p.ext1{
+    outline: solid;
+}
+
+p.ext2{
+    outline: dotted red;
+}
+
+p.ext3{
+    outline: 3px solid red;
+}
+
+p.ext4{
+    outline: thick dashed green;
+}
+
+
+
+
+CSS Outline Offset Property
+------------------------------------
+The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+
+
+The following exmaple specifies an outline 15px outside the border edge.
+
+p{
+    margin: 30px;
+    border: 2px solid black;
+    outline: 2 solid red;
+    outline-offset: 15px;
+}
+
+
+
+
+All CSS Outline Properties
+----------------------------------
+outline -   a short hand property for setting outline-width, outline-color, outline-style properties in one declaration
+outline-color   -   sets the color of an outline
+outline-style   -   sets the style of an outline
+outline-width   -   sets the width of an outline
+outline-offset  -   specifies the space between an outline and the edge or border of an element.
+
